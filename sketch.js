@@ -72,11 +72,11 @@ function draw() {
 
 function stone() {
   if (frameCount % 200 === 0) {
-    obstacle = createSprite(windowWidth, (windowWidth / 4) * 3.1, 20, 20);
+    obstacle = createSprite(windowWidth, (windowHeight / 4) * 3.1, 20, 20);
     obstacle.velocityX = -5;
     obstacle.setCollider("rectangle", 0, 0, 400, 400);
     obstacle.addImage(obstacleImage);
-    obstacle.scale = 0.15;
+    obstacle.scale = 0.15;  
     obstacleGroup.add(obstacle);
     
   }
