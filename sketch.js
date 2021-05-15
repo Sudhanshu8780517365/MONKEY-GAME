@@ -30,12 +30,7 @@ function setup() {
   monkey = createSprite(windowWidth / 5, (windowHeight / 4) * 3, 20, 20);
   monkey.addAnimation("run", monkey_running);
   monkey.scale = 0.1;
-  ground = createSprite(
-    windowWidth / 2,
-    (windowHeight / 4) * 3.2,
-    windowWidth * 4,
-    5
-  );
+  ground = createSprite(windowWidth / 2,(windowHeight / 4) * 3.2,windowWidth * 4,5);
   obstacleGroup = createGroup();
   fruitGroup = createGroup();
   ground.shapeColor = 100;
@@ -83,11 +78,11 @@ function stone() {
     obstacle.addImage(obstacleImage);
     obstacle.scale = 0.15;
     obstacleGroup.add(obstacle);
-    obstacle.lifetime = windowWidth / 5;
+    
   }
 }
 function fruits() {
-  if (frameCount % 500 === 0) {
+  if (frameCount % 200 === 0) {
     fruit = createSprite(windowWidth, (windowHeight / 4) * 2);
     fruit.addImage(bananaImage);
     fruit.scale = 0.1;
