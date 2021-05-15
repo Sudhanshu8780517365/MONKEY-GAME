@@ -76,7 +76,7 @@ function stone() {
     obstacle.velocityX = -5;
     obstacle.setCollider("rectangle", 0, 0, 400, 400);
     obstacle.addImage(obstacleImage);
-    obstacle.scale = 0.15;  
+     
     obstacleGroup.add(obstacle);
     
   }
